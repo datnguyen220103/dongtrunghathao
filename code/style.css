@@ -1,0 +1,2374 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+button,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+input,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+select,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+textarea,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* color  */
+:root {
+    --dark-red: rgb(165, 52, 52);
+    --black: #000;
+    --white: rgb(255, 255, 255);
+    --yellow-orange: rgb(228, 152, 33);
+    --brown: rgb(112, 50, 32);
+    --orange-dark: rgb(167, 75, 0);
+    --orange-yellow-2:rgb(202, 111, 24);
+    --brown: rgb(90, 49, 37);
+    --dark-red-2: rgba(172, 29, 22, 1);
+    --white-yellow: rgb(255, 249, 221);
+    --btn-call: #dc5858;
+    --boder-1: rgba(252, 207, 8, 0.6);
+    --boder-2: rgba(252, 208, 8, 0.1);
+    --boder-3: rgba(255, 240, 183, 0.1);
+    --boder-4:rgb(232, 144, 48);
+    --icon-1:rgb(252, 230, 165);
+    --title-1:rgb(255, 247, 222);
+    --background-box-1:rgb(255, 248, 224);
+}
+
+/* link list */
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding:0 ;
+    height: 100%;
+    position: relative;
+}
+
+.section {
+    margin: 0 auto;
+    position: relative;
+}
+.image-item{
+    width: 100%;
+    height: 100%;
+}
+.section-relative {
+    position: relative;
+}
+
+.section-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.block-absolute {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.image-border-radius{
+    border-radius: 200rem;
+}
+/* BUTTON*/
+.button-orange {
+
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    background: linear-gradient(180deg, orange, #ee0979);
+    display: flex;
+    box-shadow: 6px 6px 10px 0px rgb(205, 205, 205);
+    justify-content: center;
+    align-items: center;
+    animation: button-animation 1s ease-out infinite;
+}
+.button-yellow {
+
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    box-shadow: 6px 6px 10px 0px rgb(168 103 38);
+    background: linear-gradient(180deg, rgba(255, 236, 32, 1), rgba(255, 122, 1, 1));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: button-animation 1s ease-out infinite;
+}
+.btn-text-brown {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--brown);
+}
+.btn-text-white {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--white);
+}
+/* AINIMATION */
+.icon-animation{
+    width: 2rem;
+    height: 2.5rem;
+    font-weight: bold;
+    animation: icon-hand 0.4s linear infinite;
+}
+.icon-animation i{
+    font-size: 2rem;
+    color: var(--dark-red-2);
+}
+@keyframes icon-hand {
+    0% {
+        transform: translatex(0rem);
+    }
+
+    50% {
+        transform: translatex(1.5rem);
+    }
+
+    100% {
+        transform: translatex(0rem);
+    }
+}
+
+@keyframes button-animation {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        width: 960px;
+    }
+
+    .section-1 {
+        height: 688.2px;
+    }
+
+    .section-1>.section-background {
+        background-image: url(../img/banner-1-20200817014319.jpg);
+        background-size: cover;
+        background-attachment: scroll;
+        background-origin: content-box;
+        background-position: center top;
+        background-repeat: repeat;
+    }
+
+    .block-image-1 {
+        width: 77.35px;
+        height: 136.238px;
+        top: 4.8rem;
+        left: 32rem;
+    }
+
+    .image-1-text {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--white);
+        top: 2.2rem;
+        left: 1.8rem;
+    }
+
+    .image-1-text p {
+        line-height: 1.6rem;
+    }
+
+    .image-1 {
+        width: 77.35px;
+        height: 136.238px
+    }
+
+    .block-image-2 {
+        width: 412.307px;
+        height: 265.753px;
+        top: 0.5rem;
+        left: 8rem;
+    }
+    .group-1 {
+        width: 160.733px;
+        height: 80px;
+        top: 22rem;
+        left: 28.2rem;
+    }
+
+    .group-1>.group-text-1 {
+        top: 0.7rem;
+    }
+
+    .group-1>.group-text-1>.text-1 {
+        font-family: "Philosopher", sans-serif;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: var(--brown);
+    }
+
+    .group-1>.group-text-2 {
+        top: -1rem;
+        left: 6.4rem;
+    }
+
+    .group-1>.group-text-2>.text-2 {
+        font-family: "Philosopher", sans-serif;
+        color: var(--yellow-orange);
+        font-size: 3rem;
+        font-weight: bold;
+        text-shadow: 1px 2px 3px gray;
+    }
+
+    .group-1>.group-text-3 {
+        width: 6rem;
+        top: 2.5rem;
+        left: 2.3rem;
+    }
+
+    .group-1>.group-text-3>.text-3 {
+        font-family: "Philosopher", sans-serif;
+        color: var(--white);
+        font-size: 1.1rem;
+        font-weight: bold;
+
+    }
+
+    .image-3 {
+        width: 160.733px;
+        height: 43.485px;
+        top: 2rem;
+    }
+
+    .block-image-4 {
+        width: 258.03px;
+        height: 310px;
+        top: -1rem;
+        left: 46rem;
+    }
+    .block-image-5 {
+        width: 175.936px;
+        height: 94.316px;
+        top: 6rem;
+        left: 39rem;
+    }
+    .block-image-6 {
+        width: 200px;
+        height: 42.9224px;
+        top: 11.5rem;
+        left: -2rem;
+    }
+    .block-image-7 {
+        width: 603.074px;
+        height: 276.794px;
+        left: 0.2rem;
+        top: 31em;
+    }
+
+    .block-image-8 {
+        width: 236.676px;
+        height: 335.568px;
+        left: 8.5rem;
+        top: 10.7rem;
+    }
+
+    .block-image-9 {
+        width: 215.197px;
+        height: 169.922px;
+        top: 20.5rem;
+        left: 16.5rem;
+    }
+
+    .block-image-10 {
+        width: 330.956px;
+        height: 247.669px;
+        top: 22rem;
+        left: 33.5rem;
+    }
+
+    .group-2 {
+        width: 20rem;
+        top: 15rem;
+        left: 28rem;
+    }
+
+    .group-2 .group-text-1 {
+        max-width: 100%;
+    }
+
+    .group-2 .text-1 {
+        font-family: "Philosopher", sans-serif;
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: var(--dark-red);
+    }
+
+    .group-2 .text-2 {
+        font-family: "Philosopher", sans-serif;
+        font-size: 1.1rem;
+    }
+
+    .call {
+        position: fixed;
+        bottom: 3rem;
+        left: 2.5rem;
+        z-index: 100000;
+    }
+
+    .call-btn {
+        background-color: var(--btn-call);
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 20rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .boder-call {
+        position: absolute;
+        top: -0.25rem;
+        left: -0.25rem;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 20rem;
+        border: 1px solid rgb(255, 174, 174);
+        animation: boder-call 1s ease-out infinite;
+    }
+
+    @keyframes boder-call {
+        0% {
+            transform: scale(1, 1);
+        }
+
+        50% {
+            transform: scale(1.1, 1.1);
+        }
+
+        100% {
+            transform: scale(1, 1);
+        }
+    }
+
+    .call-item {
+        color: var(--white);
+        font-size: 1.9rem;
+    }
+
+    .btn-1 {
+        width: 12rem;
+        height: 2.9rem;
+        top: 35.5rem;
+        left: 14rem;
+    }
+
+    
+
+    .block-image-11 {
+        width: 124.966px;
+        height: 63.316px;
+        top: 7.5rem;
+        left: 7rem;
+    }
+
+    /* section2 */
+    .section-2 {
+        height: 611.5px;
+    }
+
+    .section-2>.section-background {
+        background-image: url(../img/nen-a-20200817070715.jpg);
+        background-size: cover;
+        background-attachment: scroll;
+        background-origin: content-box;
+        background-position: center top;
+        background-repeat: repeat;
+    }
+
+    .block-image-12 {
+        top: -7rem;
+        left: -22.5rem;
+        width: 685.087px;
+        height: 417.172px;
+    }
+
+    .block-image-13 {
+        width: 651.401px;
+        height: 410.5px;
+        top: 0rem;
+        left: 40rem;
+    }
+    .group-3 {
+        width: 34rem;
+        height: 8.5rem;
+        left: 15rem;
+        z-index: 9999;
+    }
+
+    .group-3 .title-h2 {
+        font-family: "Philosopher", sans-serif;
+        top: 1rem;
+        left: 9rem;
+        width: 17rem;
+        height: 3rem;
+        font-weight: bold;
+        text-align: justify;
+        font-size: 2.8rem;
+        color: var(--dark-red);
+    }
+
+    .group-3 h3 {
+        height: 2.5rem;
+        color: var(--brown);
+        font-family: "Philosopher", sans-serif;
+        font-size: 2rem;
+        top: 4rem;
+        left: 0;
+    }
+
+    .image-14 {
+        width: 20rem;
+        height: 3rem;
+        top: 5.6rem;
+        left: 6rem;
+    }
+
+    .boder-image-15 {
+        top: 10rem;
+        left: -1.5rem;
+        width: 337.182px;
+        height: 299.097px;
+        border-radius: 0.5rem;
+        border: 2px solid var(--yellow-orange);
+        opacity: 0.7;
+    }
+
+    .block-image-15 {
+        top: 11.5rem;
+        left: 0;
+        width: 387.182px;
+        height: 299.097px;
+
+    }
+
+    .block-image-15 > .image-item {
+        border-radius: 0.5rem;
+    }
+
+    .block-image-16 {
+        top: 24rem;
+        left: 9rem;
+        width: 269.487px;
+        height: 201.669px;
+    }
+
+    .block-image-17 {
+        top: 25rem;
+        left: -28.5rem;
+        width: 685.087px;
+        height: 417.172px;
+    }
+
+    .section-text-2 {
+        top: 11.2rem;
+        left: 27rem;
+        font-size: 1rem;
+        width: 33rem;
+        height: 20rem;
+        text-align: justify;
+    }
+
+    .text-2 {
+        margin-bottom: 1.9rem;
+    }
+
+    /* section3 */
+    .section-3 {
+        height: 1026.5px;
+    }
+
+    .section-3>.section-background {
+        background-image: url(../img/nen-b-20200817070756.jpg);
+        background-size: cover;
+        /* background-attachment: scroll;
+        background-origin: content-box; */
+        background-position: center top;
+        background-repeat: repeat;
+    }
+
+    .group-4 {
+        top: 1rem;
+        left: 0rem;
+        height: 8rem;
+    }
+
+    .group-4>h3 {
+        font-family: "Philosopher", sans-serif;
+        color: var(--brown);
+        font-size: 1.62rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 0.3rem;
+    }
+
+    .group-4>.group-title {
+        font-family: "Philosopher", sans-serif;
+        color: var(--orange-dark);
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .image-18 {
+        width: 343.497px;
+        height: 43.0877px;
+        left: 18.5rem;
+    }
+
+    .block-image-19 {
+        top: 8.5rem;
+        left: -6.8rem;
+        width: 1171.51px;
+        height: 870px;
+    }
+
+    .block-image-19 .image-item {
+        border-radius: 0.5rem;
+    }
+
+    .block-image-20 {
+        top: 11.5rem;
+        left: -3rem;
+        width: 1052.62px;
+        height: 782.075px;
+    }
+
+    .block-image-20 .image-item {
+        border-radius: 0.5rem;
+    }
+
+    .block-image-21 {
+        top: 2rem;
+        left: 62.5rem;
+        width: 224.436px;
+        height: 120.316px;
+    }
+    .group-5 .image-item,
+     .group-6 .image-item,
+      .group-7 .image-item,
+       .group-8 .image-item,
+       .group-9 .image-item,
+       .group-10 .image-item,
+       .group-11 .image-item {
+        width: 100%;
+        height: 100%;
+        border-radius: 20rem;
+        border: 7px solid var(--boder-1);
+    }
+    .section-3>.container>.group-5 {
+        width: 15rem;
+        height: 11rem;
+        top: 16.3rem;
+        left: 22.6rem;
+        color: white;
+    }
+
+    .group-5 .group-content {
+        width: 15.5rem;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .block-image-22 {
+        top: 4.8rem;
+        left: 4rem;
+        width: 100px;
+        height: 100px;
+    }
+
+    .section-3>.container>.group-6 {
+        top: 25rem;
+        left: 36rem;
+        width: 21rem;
+        height: 6.5rem;
+        color: white;
+    }
+
+    .group-6 .group-content {
+        left: 7rem;
+        top: 0.8rem;
+        width: 13rem;
+        text-align: justify;
+        font-size: 1.1rem;
+    }
+
+    .block-image-23 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .section-3>.container>.group-7 {
+        left: 38.5rem;
+        top: 34.3rem;
+        width: 22rem;
+        height: 6.5rem;
+        color: white;
+    }
+
+    .group-7 .group-content {
+        width: 13.6rem;
+        left: 7.2rem;
+        top: 0.5rem;
+        text-align: justify;
+        font-size: 1.1rem;
+    }
+
+    .block-image-24 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .section-3>.container>.group-8 {
+        top: 43rem;
+        left: 33rem;
+        width: 21rem;
+        height: 6.5rem;
+        color: white;
+    }
+
+    .group-8 .group-content {
+        left: 7rem;
+        top: 1rem;
+        width: 12rem;
+        text-align: justify;
+        font-size: 1.1rem;
+    }
+
+    .block-image-25 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .section-3>.container>.group-9 {
+        top: 43rem;
+        left: 6rem;
+        width: 28em;
+        height: 6.5rem;
+        color: white;
+    }
+
+    .group-9 .group-content {
+        top: 1.2rem;
+        width: 15rem;
+        text-align: right;
+        font-size: 1.1rem;
+    }
+
+    .block-image-26 {
+        left: 15.8rem;
+        width: 100px;
+        height: 100px;
+    }
+
+    .section-3>.container>.group-10 {
+        width: 21.5rem;
+        height: 6.5rem;
+        top: 34.3rem;
+        left: 1rem;
+        color: white;
+
+    }
+
+    .group-10 .group-content {
+        top: 0.5rem;
+        left: -0.9rem;
+        width: 14rem;
+        text-align: justify;
+        font-size: 1.1rem;
+    }
+
+    .block-image-27 {
+        left: 14rem;
+        width: 100px;
+        height: 100px;
+    }
+
+    .section-3>.container>.group-11 {
+        width: 18rem;
+        height: 6rem;
+        top: 25rem;
+        left: 4.8rem;
+        color: white;
+    }
+
+    .group-11 .group-content {
+        top: 0.8rem;
+        width: 12.1rem;
+        text-align: justify;
+        font-size: 1.1rem;
+    }
+
+    .block-image-28 {
+        left: 13.1rem;
+        width: 100px;
+        height: 100px;
+    }
+
+    .group-12 {
+        width: 380px;
+        height: 380px;
+        top: 24rem;
+        left: 18rem;
+    }
+
+    .boder-1 {
+        width: 380px;
+        height: 380px;
+        border-radius: 50rem;
+        border: 4px solid var(--boder-3);
+    }
+
+    .boder-2 {
+        top: 0.9rem;
+        left: 0.9rem;
+        width: 351px;
+        height: 351px;
+        border-radius: 50rem;
+        background-color: var(--boder-2);
+    }
+
+    .block-image-29 {
+        width: 215px;
+        height: 215px;
+        top: 5rem;
+        left: 5rem;
+
+    }
+
+    .image-29 {
+        width: 100%;
+        height: 100%;
+        border-radius: 50rem;
+        border: 8px solid var(--boder-1);
+    }
+
+    .block-image-30 {
+        top: 50rem;
+        left: 47rem;
+        width: 223.082px;
+        height: 100.405px;
+    }
+
+    .image-30 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .block-image-31 {
+        top: 14rem;
+        width: 324.873px;
+        height: 145.903px;
+    }
+
+    .image-31 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .btn-2 {
+        width: 12rem;
+        height: 2.9rem;
+        top: 53rem;
+        left: 24rem;
+    }
+
+    /* .btn-2 {
+        top: 53rem;
+        left: 24rem;
+        width: 11rem;
+        height: 2.5rem;
+        border-radius: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 6px 6px 10px 0px rgb(168 103 38);
+        background: linear-gradient(180deg, rgba(255, 236, 32, 1), rgba(255, 122, 1, 1));
+        -webkit-animation: hehe 1s infinite;
+    }
+
+    @keyframes hehe {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.1);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    } */
+
+    .section-3>.container>.btn-2>.btn-elemant>.btn-text {
+        color: var(--dark-red);
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .section-4 {
+        height: 1149.2px;
+    }
+
+    .section-4>.section-background {
+        background-image: url(../img/ddd-20200817071206.jpg);
+        background-size: cover;
+        /* background-attachment: scroll;
+        background-origin: content-box; */
+        background-position: center top;
+        background-repeat: repeat;
+    }
+
+    .group-13 {
+        top: 1rem;
+        left: 12rem;
+        width: 35rem;
+        height: 10rem;
+        z-index: 10000;
+    }
+
+    .group-13>h3 {
+        font-family: "Philosopher", sans-serif;
+        color: var(--brown);
+        font-weight: bold;
+        font-size: 1.4rem;
+        text-align: center;
+
+    }
+
+    .group-13>.group-title {
+        font-family: "Philosopher", sans-serif;
+        color: var(--orange-dark);
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .image-33 {
+        width: 343.497px;
+        height: 43.0877px;
+        left: 7rem;
+        top: 3.7rem;
+    }
+
+    .block-image-32 {
+        left: 44rem;
+        top: -6rem;
+        width: 651.401px;
+        height: 410.5px;
+    }
+
+    .image-32 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .group-14 {
+        left: 0rem;
+        top: 9.5rem;
+        width: 472.865px;
+        height: 117px;
+        border-top-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+
+        background-image: url(../img/thienphu11-20200817030215.png);
+    }
+
+    .group-14-content {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        background: linear-gradient(120deg, rgba(163, 16, 16, 0.9), rgba(105, 25, 23, 0.9));
+    }
+
+    .group-14 .group-icon {
+        top: 2.5rem;
+        left: 2.5rem;
+    }
+
+    .group-14 .boder-3 {
+        width: 40px;
+        height: 40px;
+        border-radius: 20rem;
+        background-color: rgb(252, 230, 165);
+    }
+
+    .group-14 .boder-4 {
+        top: -0.3rem;
+        left: -0.3rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 20rem;
+        border: 1px solid rgb(252, 230, 165);
+        opacity: 0.5;
+    }
+
+    .group-icon-item-1 {
+        top: -0.5rem;
+        left: 0.5rem;  
+        font-size: 2.2rem;
+        color: rgba(163, 16, 16, 0.9);
+    }
+    .group-14-text {
+        top: 2rem;
+        left: 7rem;
+        text-align: justify;
+        line-height: 25px;
+        width: 20.4rem;
+        color: rgb(252, 230, 165);
+        font-size: 1rem;
+    }
+
+    .group-15 {
+        left: 0rem;
+        top: 17.5rem;
+        width: 472.865px;
+        height: 117px;
+        border-top-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+
+        background-image: url(../img/thienphu11-20200817030215.png);
+    }
+
+    .group-15-content {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        background: linear-gradient(120deg, rgba(163, 16, 16, 0.9), rgba(105, 25, 23, 0.9));
+    }
+
+    .group-icon {
+        top: 2.5rem;
+        left: 2.5rem;
+    }
+
+    .group-15 .boder-3 {
+        width: 40px;
+        height: 40px;
+        border-radius: 20rem;
+        background-color: rgb(252, 230, 165);
+    }
+
+    .group-15 .boder-4 {
+        top: -0.3rem;
+        left: -0.3rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 20rem;
+        border: 1px solid rgb(252, 230, 165);
+        opacity: 0.5;
+    }
+
+
+    .group-15-text {
+        top: 1.3rem;
+        left: 7rem;
+        text-align: justify;
+        line-height: 25px;
+        width: 20.4rem;
+        color: rgb(252, 230, 165);
+        font-size: 1rem;
+    }
+
+    .group-16 {
+        left: 0rem;
+        top: 25.5rem;
+        width: 472.865px;
+        height: 117px;
+        border-top-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+
+        background-image: url(../img/thienphu11-20200817030215.png);
+    }
+
+    .group-16-content {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        background: linear-gradient(120deg, rgba(163, 16, 16, 0.9), rgba(105, 25, 23, 0.9));
+    }
+
+    .group-icon {
+        top: 2.5rem;
+        left: 2.5rem;
+    }
+
+    .group-16 .boder-3 {
+        width: 40px;
+        height: 40px;
+        border-radius: 20rem;
+        background-color: rgb(252, 230, 165);
+    }
+
+    .group-16 .boder-4 {
+        top: -0.3rem;
+        left: -0.3rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 20rem;
+        border: 1px solid rgb(252, 230, 165);
+        opacity: 0.5;
+    }
+
+    .group-16-text {
+        top: 1.3rem;
+        left: 7rem;
+        text-align: justify;
+        line-height: 25px;
+        width: 20.4rem;
+        color: rgb(252, 230, 165);
+        font-size: 1rem;
+    }
+
+    .group-17 {
+        left: 30.5rem;
+        top: 9.5rem;
+        width: 472.865px;
+        height: 117px;
+        border-top-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+
+        background-image: url(../img/thienphu11-20200817030215.png);
+    }
+
+    .group-17-content {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        background: linear-gradient(120deg, rgba(163, 16, 16, 0.9), rgba(105, 25, 23, 0.9));
+    }
+
+    .group-icon {
+        top: 2.5rem;
+        left: 2.5rem;
+    }
+
+    .group-17 .boder-3 {
+        width: 40px;
+        height: 40px;
+        border-radius: 20rem;
+        background-color: rgb(252, 230, 165);
+    }
+
+    .group-17 .boder-4 {
+        top: -0.3rem;
+        left: -0.3rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 20rem;
+        border: 1px solid rgb(252, 230, 165);
+        opacity: 0.5;
+    }
+    .group-17-text {
+        top: 2rem;
+        left: 7rem;
+        text-align: justify;
+        line-height: 25px;
+        width: 20.4rem;
+        color: rgb(252, 230, 165);
+        font-size: 1rem;
+    }
+
+    .group-18 {
+        left: 30.5rem;
+        top: 17.5rem;
+        width: 472.865px;
+        height: 117px;
+        border-top-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+
+        background-image: url(../img/thienphu11-20200817030215.png);
+    }
+
+    .group-18-content {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        background: linear-gradient(120deg, rgba(163, 16, 16, 0.9), rgba(105, 25, 23, 0.9));
+    }
+
+    .group-icon {
+        top: 2.5rem;
+        left: 2.5rem;
+    }
+
+    .group-18 .boder-3 {
+        width: 40px;
+        height: 40px;
+        border-radius: 20rem;
+        background-color: rgb(252, 230, 165);
+    }
+
+    .group-18 .boder-4 {
+        top: -0.3rem;
+        left: -0.3rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 20rem;
+        border: 1px solid rgb(252, 230, 165);
+        opacity: 0.5;
+    }
+
+    .group-18-text {
+        top: 2rem;
+        left: 7rem;
+        text-align: justify;
+        line-height: 25px;
+        width: 20.4rem;
+        color: rgb(252, 230, 165);
+        font-size: 1rem;
+    }
+
+    .group-19 {
+        left: 30.5rem;
+        top: 25.5rem;
+        width: 472.865px;
+        height: 117px;
+        border-top-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        background-image: url(../img/thienphu11-20200817030215.png);
+    }
+
+    .group-19-content {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        background: linear-gradient(120deg, rgba(163, 16, 16, 0.9), rgba(105, 25, 23, 0.9));
+    }
+
+    .group-icon {
+        top: 2.5rem;
+        left: 2.5rem;
+    }
+
+    .group-19 .boder-3 {
+        width: 40px;
+        height: 40px;
+        border-radius: 20rem;
+        background-color: rgb(252, 230, 165);
+    }
+
+    .group-19 .boder-4 {
+        top: -0.3rem;
+        left: -0.3rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 20rem;
+        border: 1px solid rgb(252, 230, 165);
+        opacity: 0.5;
+    }
+
+    .group-19-text {
+        top: 1.3rem;
+        left: 7rem;
+        text-align: justify;
+        line-height: 25px;
+        width: 20.4rem;
+        color: rgb(252, 230, 165);
+        font-size: 0.9rem;
+    }
+
+    .group-20 {
+        top: 35.5rem;
+        height: 32rem;
+    }
+
+    .block-image-34 {
+        left: 0rem;
+        width: 307.341px;
+        height: 404.546px;
+    }
+
+    .block-image-35 {
+        left: 20.5rem;
+        width: 307.341px;
+        height: 404.546px;
+    }
+
+    .block-image-36 {
+        left: 41rem;
+        width: 307.341px;
+        height: 404.546px;
+    }
+
+    .group-20 .image-item {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.25rem;
+    }
+
+    .group-20-item-1 .group-20-text {
+        top: 27rem;
+        left: 43rem;
+        width: 16rem;
+    }
+
+    .group-20-item-3 .group-20-text {
+        top: 27rem;
+        left: 1.5rem;
+        width: 16rem;
+    }
+
+    .group-20-text {
+        color: var(--dark-red-2);
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .group-20-text span {
+        font-weight: bold;
+    }
+
+    .btn-3 {
+        width: 12rem;
+        height: 2.9rem;
+        top: 27.4rem;
+        left: 23rem;
+    }
+
+    .section-5 {
+        height: 704.2px;
+    }
+
+    .section-5>.section-background {
+        background-image: url(../img/56-20200817071439.jpg);
+        background-size: cover;
+        background-attachment: scroll;
+        background-origin: content-box;
+        background-position: center top;
+        background-repeat: repeat;
+    }
+
+    .group-21 {
+        top: 1rem;
+        left: 12rem;
+        width: 35rem;
+        height: 7rem;
+        z-index: 10000;
+    }
+
+    .group-21>h3 {
+        font-family: "Philosopher", sans-serif;
+        color: var(--brown);
+        font-weight: bold;
+        font-size: 1.4rem;
+        text-align: center;
+
+    }
+
+    .group-21>.group-title {
+        font-family: "Philosopher", sans-serif;
+        color: var(--orange-dark);
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .image-37 {
+        width: 343.497px;
+        height: 43.0877px;
+        left: 7rem;
+        top: 3.7rem;
+    }
+
+    .box-1 {
+        top: 9rem;
+        left: -3rem;
+        width: 1059px;
+        height: 440px;
+        
+    }
+
+    .box-1-background {
+        background-size: cover;
+        background-attachment: scroll;
+        background-origin: content-box;
+        background-image: url(../img/fvgvsrt-20200817033754.jpg);
+        background-position: center top;
+        background-repeat: repeat;
+        border-radius: 8px;
+    }
+    .box-1-coat{
+        background:  linear-gradient(212deg, rgba(255, 158, 86, 0.8), rgba(127, 37, 1, 1));
+        border-radius: 8px;
+    }
+    .group-icon-item-2{
+        top: -3rem;
+        left: -2rem;
+        font-size: 1.5rem;
+        color: var(--icon-1);
+    }
+    .group-22{
+        width: 28rem;
+        height: 3rem;
+        top: 12.3rem;
+        left: 1rem;
+    }
+    .group-22-text{
+        left: 3rem;
+        text-align: justify;
+        color: white;
+        width: 24rem;
+        font-size: 1rem;
+    }
+    
+    .group-23{
+        width: 28rem;
+        height: 4.5rem;
+        top: 16.3rem;
+        left: 1rem;
+    }
+    .group-23-text{
+        left: 3rem;
+        text-align: justify;
+        color: white;
+        width: 24rem;
+        font-size: 1rem;
+    }
+
+    .group-24{
+        width: 28rem;
+        height: 4.5rem;
+        top: 22.3rem;
+        left: 1rem;
+    }
+    .group-24-text{
+        left: 3rem;
+        text-align: justify;
+        color: white;
+        width: 24rem;
+        font-size: 1rem;
+    }
+
+    .group-25{
+        width: 28rem;
+        height: 4.5rem;
+        top: 28.3rem;
+        left: 1rem;
+    }
+    .group-25-text{
+        left: 3rem;
+        text-align: justify;
+        color: white;
+        width: 24rem;
+        font-size: 1rem;
+    }
+    .block-image-38{
+        top: 22rem;
+        left: -7.9rem;
+        width: 200.153px;
+        height: 283.784px;
+    }
+    .block-image-40{
+        top: 34rem;
+        left: -3rem;
+        width: 100.566px;
+        height: 79.4084px;
+    }
+    .group-26{
+        top: 12rem;
+        left: 30rem;
+        width: 483.5px;
+        height: 348px;
+        border-radius: 0.5rem;
+        box-shadow: 8px 8px 15px 0px rgb(100 45 24 / 60%);
+        background-color: rgb(255, 242, 210);
+    }
+    .block-image-41{
+        top: 2rem;
+        left: 2rem;
+        width: 200px;
+        height: 269px;
+        border: 1px solid black;
+    }
+    .block-image-42{
+        top: 2rem;
+        left: 16rem;
+        width: 200px;
+        height: 269px;
+        border: 1px solid black;
+    }
+    .group-26-content{
+        top: 19.5rem;
+        left: 9rem;
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--dark-red-2);
+    }
+    .group-26-icon{
+        top: 19rem;
+        left: 7rem;
+        width: 2rem;
+        height: 2.5rem;
+        font-weight: bold;
+    }
+    .group-26-icon i{
+        font-size: 2rem;
+        color: var(--dark-red-2);
+    }
+
+    .block-image-43{
+        left: -26rem;
+        top: -12rem;
+        width: 685.087px;
+        height: 417.172px;
+    }
+    .block-image-44{
+        left: 55rem;
+        top: 5rem;
+        width: 303.453px;
+        height: 136.579px;
+    }
+    .btn-4 {
+        width: 14rem;
+        height: 2.9rem;
+        top: 38.9rem;
+        left: 23rem;
+    }
+
+    
+    /* section6 */
+    .section-6{
+        height: 898.6px;
+    }
+    .section-6 > .section-background{
+        background-image: url(../img/99-20200817071502.jpg);
+        background-size: cover;
+        background-attachment: scroll;
+        background-origin: content-box;
+        background-position: center top;
+        background-repeat: repeat;
+    }
+    .box-2{
+        top: 12rem;
+        left: -1rem;
+        width: 987.649px;
+        height: 681.39px;
+        background-color: white;
+        box-shadow: 0px 0px 30px -15px rgb(0 0 0 / 30%);;
+    }
+    .block-image-45{
+        top: 0rem;
+        left: 55rem;
+        width: 651.401px;
+        height: 410.5px;
+    }
+    .block-image-46{
+        top: 3rem;
+        left: -11.5rem;
+        width: 258.074px;
+        height: 115.903px;
+    }
+    .block-image-47{
+        top: 13rem;
+        left: 21.5rem;
+        width: 614.524px;
+        height: 545.46px;
+    }
+    
+    .slide-1{
+        top: 13rem;
+        width: 325.007px;
+        height: 539.46px;
+    }
+    .carousel-item img{
+        height: 539.46px;
+    }
+
+    .btn-5 {
+        width: 12rem;
+        height: 2.9rem;
+        top: 49rem;
+        left: 25rem;
+    }
+
+    .group-27 {
+        top: 3rem;
+        left: 8rem;
+        width: 44rem;
+        height: 10rem;
+        z-index: 10000;
+    }
+    .group-27>h3 {
+        font-family: "Philosopher", sans-serif;
+        color: var(--brown);
+        font-weight: bold;
+        font-size: 1.4rem;
+        text-align: center;
+      
+    }
+
+    .group-27>.group-title {
+        font-family: "Philosopher", sans-serif;
+        color: var(--orange-yellow-2);
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 0.3rem;
+    }
+    .group-27>.group-title >span{
+        color:rgb(169, 4, 4);
+    }
+
+    .image-48 {
+        width: 343.497px;
+        height: 43.0877px;
+        left: 7rem;
+        top: 4rem;
+    }
+    /* section 7 */
+    .section-7{
+        height: 654.5px;
+    }
+    .section-7 > .section-background{
+        background-image: url(../img/nen-a-20200817070715.jpg);
+        background-size: cover;
+        background-attachment: scroll;
+        background-origin: content-box;
+        background-position: center top;
+        background-repeat: repeat;
+    }
+    .block-image-49{
+        top: 2rem;
+        left: -3.5rem;
+        width: 1072.62px;
+        height: 582.843px;
+       
+    }
+    .block-image-49 > .image-item{
+        border-radius: 0.3rem;
+    }
+
+    .group-28 {
+        top: 5.5rem;
+        left: 8rem;
+        width: 44rem;
+        height: 10rem;
+        z-index: 10000;
+    }
+    .group-28>.group-title {
+        font-family: "Philosopher", sans-serif;
+        color: var(--title-1);
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 0.3rem;
+    }
+    .group-27>.group-title >span{
+        color:rgb(169, 4, 4);
+    }
+
+    .image-50 {
+        width: 343.497px;
+        height: 43.0877px;
+        left: 11rem;
+        top: 2rem;
+    }
+    .block-image-51{
+        top: 3.5rem;
+        left: 43rem;
+        width: 303.453px;
+        height: 136.579px;
+    }
+    .block-image-52{
+        top: 30.4rem;
+        left: -3rem;
+        width: 235.917px;
+        height: 105.952px;
+    }
+    .group-30> .boder-1{
+        width: 478px;
+        height: 264px;
+        border: 1px solid var(--boder-4);
+        border-radius: 0.2rem;
+    }
+    .box-3 {
+        top: 0.5rem;
+        left: 0.5rem;
+        width: 462px;
+        height: 249px;
+        background-color: var(--background-box-1);
+        border-radius: 0.2rem;
+    }
+    .group-icon-item-3{
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--orange-dark);
+    }
+    .group-30{
+        top: 13rem;
+        left: 31rem;
+        width: 30rem;
+        height: 16.2rem;
+    }
+    .group-30-text{
+        width: 24.3rem;
+    }
+   
+    .group-30-text{
+        top: -0.5rem;
+        font-size: 1rem;
+    }
+    
+    .group-30-1 .group-30-text,
+    .group-30-2 .group-30-text,
+    .group-30-3 .group-30-text,
+    .group-30-4 .group-30-text{
+        top: 0rem;
+        left: 2rem;
+    }
+    .group-30-1{
+        left: 3rem;
+        top: 4rem;
+    }
+    .group-30-2{
+        left: 3rem;
+        top: 7.3rem;
+    }
+    .group-30-3{
+        left: 3rem;
+        top: 10.4rem;
+    }
+    .group-30-4 {
+        left: 3rem;
+        top: 12.4rem;
+    }
+    .group-header{
+        top: -1.5rem;
+        left: 9rem;
+        width: 200px;
+        height: 53.8038px;
+        border-radius: 10rem;
+        color: yellow;
+        background-color: rgb(145, 23,16);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .group-header p{
+        font-family: "Philosopher", sans-serif;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .group-31> .boder-1{
+        width: 478px;
+        height: 264px;
+        border: 1px solid var(--boder-4);
+        border-radius: 0.2rem;
+    }
+    .group-31{
+        top: 13rem;
+        left: -0.5rem;
+        width: 30rem;
+        height: 16.2rem;
+    }
+    .group-31-text{
+        top: -0.5rem;
+        width: 24.3rem;
+    }
+    .group-31-text{
+        font-size: 1rem;
+    }
+    
+    .group-31-1 .group-31-text,
+    .group-31-2 .group-31-text,
+    .group-31-3 .group-31-text{
+        top: 0rem;
+        left: 2rem;
+    }
+    .group-31-1{
+        left: 3rem;
+        top: 4rem;
+    }
+    .group-31-2{
+        left: 3rem;
+        top: 6.2rem;
+    }
+    .group-31-3{
+        left: 3rem;
+        top: 9.4rem;
+    }
+    .group-30-text p,
+    .group-31-text p{
+        width: 22.5rem;
+    }
+
+    .block-image-53{
+        top: 20rem;
+        left: 19.5rem;
+        width: 130.176px;
+        height: 184.568px;
+    }
+    .block-image-54{
+        top: 25rem;
+        left: 15rem;
+        width: 133.068px;
+        height: 105.072px;
+    }
+
+    .btn-6 {
+        width: 12rem;
+        height: 2.9rem;
+        top: 32rem;
+        left: 24rem;
+    }
+    /* SECTION 8 */
+    .section-8{
+        height: 772.5px;
+    }
+    .section-8 > .section-background{
+        background-image: url(../img/nen-b-20200817070756.jpg);
+        background-size: cover;
+        background-attachment: scroll;
+        background-origin: content-box;
+        background-position: center top;
+        background-repeat: repeat;
+    }
+    .group-32 {
+        top: 3rem;
+        left: 0rem;
+        height: 8rem;
+    }
+
+    .group-32>h3 {
+        font-family: "Philosopher", sans-serif;
+        color: var(--brown);
+        font-size: 1.62rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 0.3rem;
+    }
+
+    .group-32>.group-title {
+        font-family: "Philosopher", sans-serif;
+        color: var(--orange-dark);
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .image-55 {
+        width: 343.497px;
+        height: 43.0877px;
+        left: 19rem;
+        top: 4rem;
+    }
+    .btn-7 {
+        width: 12rem;
+        height: 2.9rem;
+        top: 43rem;
+        left: 24rem;
+    }
+    .block-image-56{
+        top: 18rem;
+        left: -16rem;
+        width: 313px;
+        height: 67.1735px;
+    }
+    .block-image-57{
+        top: 7rem;
+        left: 55rem;
+        width: 396.732px;
+        height: 178.562px;
+    }
+    .group-33-background{
+        width: 468.416px;
+        height: 209.39px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 4px;
+    }
+    .group-33-image{
+        top: 2.5rem;
+        left: 1.9rem;
+        width: 124px;
+        height: 124px;
+    }
+    .group-33-text{
+        top: 4.5rem;
+        left: 11rem;
+        font-size: 1rem;
+        width: 16rem;
+        text-align: justify;
+    }
+    .group-33-text span{
+        top: -1.7rem;
+        font-size: 1.14rem;
+        font-weight: bold;
+        color: var(--dark-red-2);
+    }
+
+    .group-33-1{
+        top: 13rem;
+    }
+    .group-33-2{
+        top: 28rem;
+    }
+    .group-33-3{
+        top: 13rem;
+        left: 31rem;
+    }
+    .group-33-4{
+        top: 28rem;
+        left: 31rem;
+    }
+    /* SECTION 9 */
+    .section-9{
+        height: 919.6px;
+    }
+    .section-9 > .section-background{
+        background-image: url(../img/op-20200817071804.jpg);
+        background-size: cover;
+        background-attachment: scroll;
+        background-origin: content-box;
+        background-position: center top;
+        background-repeat: repeat;
+    }
+    .group-34 {
+        top: 3rem;
+        left: 0rem;
+        height: 8rem;
+    }
+
+    .group-34>h3 {
+        font-family: "Philosopher", sans-serif;
+        color: var(--brown);
+        font-size: 1.62rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 0.3rem;
+    }
+
+    .group-34>.group-title {
+        font-family: "Philosopher", sans-serif;
+        color: rgb(180,11,1);
+        font-size: 3.13rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .image-64 {
+        width: 343.497px;
+        height: 43.0877px;
+        left: 19rem;
+    }
+    .block-image-62{
+        top: -8rem;
+        left: 41.5rem;
+        width: 651.401px;
+        height: 410.5px;
+    }
+    .block-image-63{
+        top: 4rem;
+        left: -11.5rem;
+        width: 251.144px;
+        height: 112.791px;
+    }
+    
+    .group-boder-1{
+        width: 844.499px;
+        height: 327.998px;
+        background-color: aqua;
+        border-radius: 0.5rem;
+        border: 10px  ;
+        background: linear-gradient(180deg, #ffe259, #ffa751);
+    }
+    .group-background-1{
+        top: 0.625rem;
+        left: 0.625rem;
+        width: 824.219px;
+        height: 310.225px;
+        border-radius: 0.5rem;
+        background-color: white;
+    }
+    .before::before{
+        content: "✓";
+        font-size: 1rem;
+        color: #e8ba30;
+        margin-right: 0.8rem;
+    }
+    .group-text-4{
+        top: 3.5rem;
+        left: 3.5rem;
+        font-size: 0.95rem;
+    }
+    .group-text-4-title{
+        font-family: "Philosopher", sans-serif;
+        color: var(--brown);
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .group-list-1{
+        top: 2.3rem;
+    }
+ 
+
+    
+    .boder-bottom-1{
+        top: 10.187625rem;
+        width: 389.833px;
+        height: 50.7953px;
+        background-color: rgb(225,221,118); 
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .boder-bottom-1 p{
+        color: rgb(172,29,24);
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+
+    .group-image-1{
+        top: 3.8rem;
+        left: 24.8rem;
+        width: 389.833px;
+        height: 213.797px;
+    }
+
+    .group-35{
+        top: 13.5rem;
+        left: 3.5rem;
+    }
+    .btn-8 {
+        width: 12rem;
+        height: 2.9rem;
+        top: 13rem;
+        left: 3.6rem;
+    }
+    .block-image-65{
+        width: 389.833px;
+        height: 163.002px;
+    }
+    .group-icon-1{
+        top: 13.5rem;
+        left: 16rem;
+    }
+
+    .group-36{
+        top: 35rem;
+        left: 3.5rem;
+    }
+    
+    .btn-9 {
+        width: 12rem;
+        height: 2.9rem;
+        top: 14.5rem;
+        left: 3.6rem;
+    }
+   
+    .block-image-66{
+        width: 389.833px;
+        height: 163.002px;
+    }
+    .group-icon-2{
+        top: 15rem;
+        left: 16rem;
+    }
+    /* SECTION 10 */
+    .section-10{
+        height: 604.5px;
+    }
+    .section-10 > .section-background{
+        background-image: url(../img/99999999-20200817065539.jpg);
+        background-size: cover;
+        background-attachment: scroll;
+        background-origin: content-box;
+        background-position: center top;
+        background-repeat: repeat;
+    }
+    .group-37{
+        top: 3rem;
+        left: 33.5rem;
+        width: 408px;
+        height: 462px;
+    }
+    .group-37-boder{
+        width: 408px;
+        height: 462px;
+        border-radius: 0.8rem;
+        border: 1px solid rgb(215, 181, 84);
+    }
+    .group-37-background{
+        top: 0.4rem;
+        left: 0.4rem;
+        width: 393.5px;
+        height: 448.555px;
+        border-radius: 0.8rem;
+        background-color: #b96d22;
+    }
+    .input-text{
+        width: 17rem;
+        top: 2.5rem;
+        left: 4.2rem;
+    }
+    .input-tile{
+        /* position: relative; */
+        color: white;
+        font-weight: bold;
+        font-size: 1.812rem;
+        text-align: center;
+        margin-bottom: 0.8rem;
+    }
+    .after::after{
+        content: "";
+        background: white;
+        height: 0.1rem;
+        width: 6rem;
+        opacity: 0.3;
+        position: absolute;
+        left: 5.7rem;
+        top: 2.8rem;
+    }
+    .input-text h4{
+        color: white;
+        font-size: 1.31rem;
+        text-align: center;
+    }
+    .input-list{
+        top: 11rem;
+        left: 3rem;
+    }
+    .input-item{
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+        width: 19.3rem;
+        height: 2.8rem;
+        margin-bottom: 0.3rem;
+    }
+    .input-item-special{
+        height: 5rem;
+    }
+    .btn-10{
+        top: 23rem;
+        left: 6.5rem;
+        width: 12rem;
+        height: 2.9rem;
+    }
+    .group-38{
+        left: 5.4rem;
+        top: 19.8rem;
+        width: 397.443px;
+        height: 171.041px;
+    }
+    .box-4{
+        top: 3rem;
+        width: 281px;
+        height: 84px;
+        background-color: white;
+    }
+    .box-4 h3{
+        top: 2rem;
+        left: 2.7rem;
+        font-family: "Philosopher", sans-serif;
+        font-size: 1.82rem ;
+        font-weight: bold;
+        color: rgb(172, 29, 24);
+    }
+    .group-38-title{
+        top: 1.6rem;
+        left: 4.8rem;
+        font-family: "Philosopher", sans-serif;
+        font-size: 1.45rem;
+        font-weight: bold;
+    }
+    .block-image-67{
+        left: 2rem;
+        top: -0.5rem;
+        width: 220.584px;
+        height: 85.7293px;
+    }
+    .block-image-68{
+        top: 2.3rem;
+        left: 14.3rem;
+        width: 171.878px;
+        height: 128.624px;
+    }
+    .group-39{
+        top: 2.5rem;
+        width: 472.96px;
+        height: 245.586px;
+    }
+    .block-image-69{
+        top: 8.5rem;
+        left: 5.5rem;
+        width: 363.343px;
+        height: 71.1813px;
+    }
+    .block-image-70{
+        width: 472.96px;
+        height: 186.586px;
+    }
+    .group-39-title-1{
+        top: 1.3rem;
+        left: 4rem;
+        font-family: "Philosopher", sans-serif;
+        font-size: 1.63rem;
+        color: rgb(245, 226, 168);
+        font-weight: bold;
+
+    }
+    .group-39-title-2{
+        left: 8.5rem;
+        width: 15rem;
+        height: 3rem;
+        font-family: "Philosopher", sans-serif;
+        font-size: 1.26rem;
+        color: var(--brown);
+        font-weight: bold;
+    }
+    .group-39 p{
+        left: 5.2rem;
+        top: 13.5rem;
+        font-family: "Philosopher", sans-serif;
+        font-size: 1.45rem;
+    }
+    .block-image-71{
+        left: 25rem;
+        top: 5rem;
+        width: 132.241px;
+    height: 79.876px;
+    }
+    
+    .group-40{
+        height: 3rem;
+        top: 32rem;
+        left: 3rem;
+    }
+    .group-40-text{
+        left: -3rem;
+        width: 4.7rem;
+        font-size: 0.8rem;
+        color: rgb(60, 50, 50);
+    }
+    .group-40-clock{
+        height: 2.5rem;
+        left: 6rem;
+        top: 0rem;
+        display: flex;
+    }
+    .clock{
+        width: 42px;
+        height: 42px;
+        background-color:  rgb(160, 131, 114);
+        margin-right: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .clock span{
+        color: white;
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+    .group-40-time{
+        height: 1rem;
+        display: flex;
+        top: 3rem;
+        left: 5.8rem;
+    }
+    .time{
+        margin-right: 2.2rem;
+        height: 1rem;
+    }
+    
+    /* SECTION 11 */
+    .section-11{
+        height: 260.95px;
+    }
+    .section-11 > .section-background{
+        background-image: url(../img/thienphu11-20200817065709.png);
+        background-size: cover;
+        background-attachment: scroll;
+        background-origin: content-box;
+        background-position: center top;
+        background-repeat: repeat;
+    }
+    .section-background-coat{
+        background-color: rgba(79, 38, 9, 0.9);
+    }
+    
+    .section-11-text h3{
+        margin-bottom: 1rem;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .section-11-text li{
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+    .section-11-text a,i{
+        color: white;
+        font-size: 0.9rem;
+    }
+    .section-11-icon{
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+    .group-41{
+        left: 4rem;
+        top: 3rem;
+        width: 18rem;
+        height: 8rem;
+    }
+    .group-42{
+        left: 31rem;
+        top: 3rem;
+        width: 21rem;
+        height: 8rem;
+    }
+    .group-42-text i{
+        margin-right: 0.8rem;
+    }
+    .group-42-line-1{
+        height: 2rem;
+        display: flex;
+    }
+    .group-42-line-2 {
+        height: 2rem;
+        top: 6rem;
+        display: flex;
+    }
+   .address{
+    left: 2rem;
+   }
+
+   .line{
+    top: 12rem;
+    left: 6rem;
+    width: 48.4rem;
+    height: 1px;
+    border-top: 1px solid rgba(255, 255, 255, 0.09);
+   }
+
+}
+
+
+
+@media (max-width: 767px) {
+    .container {
+        width: 420px;
+    }
+}
